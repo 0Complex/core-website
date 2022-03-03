@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #0C0C0E;
+    margin:0;
+    
+}
+
+.topGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: [headerCol] 7vw [ZeroComplex] 42vw;
+    margin-bottom:0;
+    margin-right:0;
+    
+}
+#OComplex{
+    margin-top:0;
+    grid-column:1/-1;
+    
+  grid-row-start: ZeroComplex;
+  grid-row-end: 3;
+  font-size: 23vw;
+  overflow: hidden;
+  margin-left:-3.7vw;
+  
+  line-height: 95%;
+  color:#1D1E21;
+  font-family: 'Space Grotesk';
+  margin-bottom:0;
+  margin-right:0;
+}
+#headerHome{
+    grid-column: 1 / 2;
+    align-self:center;
+    justify-self:start;
+    margin-left:1vw;
+    color: #8785F1;
+    margin-right:1vw;
+    margin-top:-1.25vw;
+    text-decoration: none;
+    
+}
+
+#headerContact{
+    grid-column: 3;
+    align-self: center;
+    justify-self: end;
+    margin-right:1vw;
+}
+.headerText{
+    color:#ECEDF3;
+    font-family:'Space Grotesk';
+    font-size: 1.75vw;
+    transition: color 0.25s ease-in-out;
+    margin-top:.5vw;
+    font-weight:400;
+    
+}
+#midNav{
+    grid-column:2/3;
+    display:flex;
+    justify-content: center;
+    align-self:center;
+    gap:6vw;
+    
+}
+.headerText:hover{
+    color:#8785F1;
+}
+
+.navButton{
+    text-decoration: none;
+}
+#foreward{
+    margin-right:1vw;
+}
+#zero{
+font-family: 'Space Mono';
+color: #8785F1;
+font-size:2vw;
+display:inline;
+}
+.logoText{
+    display:inline;
+    color:#ECEDF3;
+    font-family:'Space Grotesk';
+    font-size: 2vw;
+
+    font-weight:400;
+}
+
+#mainGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: [defRow] 7vw [inspire] 35vw [theStart] 5vw [theorize] 20vw [design] 25vw [build]30vw [gradient]40vw [final]10vw;
+    margin-bottom:0;
+    margin-top:0;
+    margin-right:0;
+    overflow:hidden;
+}
+nav{
+    margin-bottom:0;
+}
+#about{
+    grid-column:1/6;
+    grid-row: defRow/2;
+    display:inline;
+    margin-top: 1vw;
+    margin-left:1vw;
+}
+#aboutText{
+    margin-left:1vw;
+    
+    font-family:'Space Grotesk';
+    font-size:3vw;
+    color:#ECEDF3;
+    font-weight:400;
+    display:inline;
+}
+#future{
+    font-family:"Computer Modern Serif";
+    color:#8785F1;
+    font-size:3vw;
+    display:inline;
+    font-style:italic;
+    font-weight:400;
+}
+#definition{
+    grid-column: 6/-1;
+    grid-row:defRow/2;
+    margin-top:1.5vw;
+    margin-left:2vw;
+}
+#futureDef{
+    font-size:1.5vw;
+    color:#ECEDF3;
+    display:inline;
+    font-family:"Computer Modern Serif";
+    font-weight:400;
+    font-style: italic;
+    margin-bottom:0;
+}
+#divider{
+    font-size:1.5vw;
+    color:#8785F1;
+    display:inline;
+    font-family:"Computer Modern Serif";
+    font-weight:400;
+    margin-bottom:0;
+    
+}
+
+#noun{
+    display:inline;
+    font-family:'Space Grotesk';
+    font-size:1vw;
+    color:#CBCCD3;
+    font-weight:400;
+    margin-bottom:0;
+    line-height:1.5vw;
+}
+#def{
+    display:inline;
+margin-top:0;
+    font-family:'Space Grotesk';
+    font-size:1vw;
+    color:#ECEDF3;
+    font-weight:400;
+    line-height:1.5vw;
+}
+#eg{
+    display:inline;
+    margin-top:0;
+    font-family:'Space Grotesk';
+    font-size:1vw;
+    color:#CBCCD3;
+    font-weight:400;
+    line-height:1.5vw;
+}
+@media (max-width : 1000px){
+    #definiton, #futureDef, #noun, #def, #eg, #divider{
+        display:none;
+    }
+}
+#inspireBox{
+    grid-column: 1/-1;
+    grid-row: inspire/theStart;
+    margin:2vw;
+    margin-top:3vw;
+    border-radius:0.65vw;
+    background:#1D1E21;
+    padding:10vw;
+    text-align: center;
+    
+}
+.building{
+    align-self: center;
+    font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 700;
+font-size: 4vw;
+line-height: 5vw;
+text-align: center;
+color:#ECEDF3;
+display:inline;
+}
+#inspireLaunch{
+    font-family:"Computer Modern Serif";
+    font-style: italic;
+    font-size:4vw;
+    line-height: 5vw;
+text-align: center;
+color:#ECEDF3;
+display:inline;
+align-self: center;
+font-weight:400;
+}
+.purple{
+    color:#8785F1;
+}
+#icon{
+    margin-top: 6vw;
+    grid-column:2/4;
+grid-row:theStart/theorize;
+}
+#iconImg{
+    height:15vw;
+    width:15vw;
+}
+.start{
+    font-family: Space Grotesk;
+font-style: normal;
+font-weight: normal;
+font-size: .85vw;
+line-height: 18px;
+color: #ECEDF3;
+grid-column: 1/2;
+grid-row:theStart/-1;
+margin-left:3vw;
+display:inline;
+}
+#line1{
+    background: #1D1E21;
+border-radius: 2px;
+height:2px;
+grid-column:4/9;
+grid-row:theStart/theorize;
+margin-top:1.8vw;
+margin-right:5vw;
+margin-left:4vw;
+}
+#theorize{
+display:inline-flex;
+grid-column:4/9;
+grid-row:theorize/design;
+margin-right:5vw;
+margin-left:4vw;
+}
+.listText{
+    display:inline-block;
+    font-family: Space Grotesk;
+font-style: normal;
+font-weight: normal;
+font-size: 2vw;
+color: #ECEDF3;
+margin-right:4vw;
+}
+.nums{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .85vw;
+    line-height: 18px;
+    color: #ECEDF3;
+    display:inline-block;
+    margin-right:5vw;
+    height:10vw;
+      
+}
+#line2{
+    background: #1D1E21;
+    border-radius: 2px;
+    height:2px;
+    grid-column:4/9;
+    grid-row:design/build;
+    margin-top:1.8vw;
+    margin-right:5vw;
+    margin-left:4vw; 
+    
+}
+#design{
+    display:inline-flex;
+grid-column:4/9;
+grid-row:design/build;
+margin-right:5vw;
+margin-left:4vw;
+margin-top:4vw;
+
+}
+#line3{
+    background: #1D1E21;
+    border-radius: 2px;
+    height:2px;
+    grid-column:4/9;
+    grid-row:build/gradient;
+    margin-top:1.8vw;
+    margin-right:5vw;
+    margin-left:4vw; 
+}
+#build{
+    display:inline-flex;
+grid-column:4/9;
+grid-row:build/gradient;
+margin-right:5vw;
+margin-left:4vw;
+margin-top:4vw;
+
+
+}
+#back{
+    background: linear-gradient(180deg, #0C0C0E 0%, #0B0A1C 100%);
+    grid-row:theStart/gradient;
+    grid-column:1/-1;
+    z-index:-1;
+}
+#gradient{
+    display:flex;
+    flex-direction: column;
+grid-column:1/-1;
+grid-row:gradient/final;
+background: linear-gradient(180deg, #DADFFA 0%, #ECEDF3 100%);
+align-items:center;
+justify-content: center;
+
+border-radius:1vw;
+
+}
+#wYS{
+    font-family: Space Grotesk;
+font-style: normal;
+font-weight: bold;
+font-size: 4vw;
+color: #0C0C0E;
+}
+#whatYouSee{
+    display:flex;
+    text-align: center;
+
+}
+.contactContainer{
+    display:inline-flex;
+    flex-direction:row;
+    grid-column:2/7;
+    grid-row:gradient/final;
+    
+}
+.contactHolder{
+    display:inline-flex;
+    flex-direction: row;
+    margin-left:8vw;
+   margin-right:8vw; 
+}
+.contactText{
+    font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: bold;
+font-size: 2vw;
+line-height: 2.2vw;
+text-align: center;
+}
+.contactTB{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactButton{
+    background: #0C0C0E;
+border-radius: 6px;
+color:#ECEDF3;
+line-height:3vw;
+padding: 0 .5vw;
+width: auto;
+height: 2.9vw;
+justify-content: center;
+text-align: center;
+text-decoration:none;
+transition: background 0.25s ease-in-out;
+
+
+font-family: Space Grotesk;
+font-style: normal;
+font-weight: normal;
+font-size: 1.5vw;
+}
+.contactButton:hover{
+    background:#8785F1;
+    
+}
+#bottom{
+    grid-column:1/-1;
+    grid-row:final/-1;
+    justify-content: center;
+display:flex;
+margin-left:1vw;
+text-align: center;
+flex-direction: column;
+}
+#bottom0CX{
+    grid-column: 1 / 2;
+    display:flex;
+    flex-direction: row;
+    align-self:center;
+    justify-self:start;
+   
+    color: #8785F1;
+    display:inline;
+    margin-top:0;
+    text-decoration: none; 
+    
+    
+}
+#copyright{
+    
+    display:flex;
+    align-self:center;
+    justify-self:start;
+        font-family:'Space Grotesk';
+        font-size:.75vw;
+        color:#CBCCD3;
+        font-weight:400;
+        margin-top: 0vw;
+    }
